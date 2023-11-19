@@ -88,7 +88,7 @@ const Login = () => {
                                 <p>You have no account ? <Link className='text-blue-500' to='/register'>Register</Link></p>
                             </div>
                             <div className='text-center text-slate-600 pt-1'>
-                                <p> <a target='_black' className='text-blue-500' href="https://bashundhara.vercel.app/register">Register</a> as a seller </p>
+                                <p> <a target='_black' className='text-blue-500' href="https://bashundhara-admin.vercel.app/register">Register</a> as a seller </p>
                             </div>
                         </div>
                         <div className='w-full h-full py-4 pr-4'>

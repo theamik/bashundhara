@@ -138,7 +138,7 @@ const Register = () => {
                   <a
                     target="_black"
                     className="text-blue-500"
-                    href="https://bashundhara.vercel.app/login"
+                    href="https://bashundhara-admin.vercel.app/login"
                   >
                     Login
                   </a>{" "}
