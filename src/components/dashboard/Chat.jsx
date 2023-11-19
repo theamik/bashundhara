@@ -14,7 +14,7 @@ import {
 import toast from "react-hot-toast";
 import { FaList } from "react-icons/fa";
 
-const socket = io("http://localhost:5000");
+const socket = io("https://bashundhara-backend.onrender.com");
 
 const Chat = () => {
   const scrollRef = useRef();
@@ -116,7 +116,7 @@ const Chat = () => {
                   {activeSeller.some((c) => c.sellerId === f.fdId) && (
                     <div className="w-[10px] h-[10px] rounded-full bg-green-500 absolute right-0 bottom-0"></div>
                   )}
-                  <img src="http://localhost:3001/images/user.png" alt="" />
+                  <img src="https://bashundhara.vercel.app/images/user.png" alt="" />
                 </div>
                 <span>{f.name}</span>
               </Link>
@@ -134,7 +134,7 @@ const Chat = () => {
                     ) && (
                       <div className="w-[10px] h-[10px] rounded-full bg-green-500 absolute right-0 bottom-0"></div>
                     )}
-                    <img src="http://localhost:3001/images/user.png" alt="" />
+                    <img src="https://bashundhara.vercel.app/images/user.png" alt="" />
                   </div>
                   <span>{currentFd.name}</span>
                 </div>
@@ -157,7 +157,7 @@ const Chat = () => {
                         >
                           <img
                             className="w-[30px] h-[30px] "
-                            src="http://localhost:3001/images/user.png"
+                            src="https://bashundhara.vercel.app/images/user.png"
                             alt=""
                           />
                           <div className="p-2 bg-purple-500 text-white rounded-md">
@@ -174,7 +174,7 @@ const Chat = () => {
                         >
                           <img
                             className="w-[30px] h-[30px] "
-                            src="http://localhost:3001/images/user.png"
+                            src="https://bashundhara.vercel.app/images/user.png"
                             alt=""
                           />
                           <div className="p-2 bg-cyan-500 text-white rounded-md">
