@@ -123,7 +123,7 @@ const Login = () => {
                   <a
                     target="_black"
                     className="text-blue-500"
-                    href="https://bashundhara-admin.vercel.app/register"
+                    href="https://https://bashundhara-admin.onrender.com/register"
                   >
                     Register
                   </a>{" "}
