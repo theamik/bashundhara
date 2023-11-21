@@ -22,6 +22,7 @@ export const customer_login = createAsyncThunk(
             localStorage.setItem('customerToken', data.token)
             return fulfillWithValue(data)
         } catch (error) {
+            console.log(error)
             return rejectWithValue(error.response.data)
         }
     }

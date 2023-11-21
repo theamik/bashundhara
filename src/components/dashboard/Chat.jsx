@@ -15,6 +15,7 @@ import toast from "react-hot-toast";
 import { FaList } from "react-icons/fa";
 
 const socket = io("https://bashundhara-backend.onrender.com");
+// export const socket = io('https://localhost:5000')
 
 const Chat = () => {
   const scrollRef = useRef();
