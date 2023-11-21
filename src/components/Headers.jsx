@@ -161,10 +161,10 @@ const Headers = () => {
                                 userInfo ? <Link className='flex cursor-pointer justify-center items-center gap-2 text-sm' to='/dashboard'>
                                     <span><FaUser /></span>
                                     <span>{userInfo.name}</span>
-                                </Link> : <div className='flex cursor-pointer justify-center items-center gap-2 text-sm'>
+                                </Link> : <Link to='/login' className='flex cursor-pointer justify-center items-center gap-2 text-sm'>
                                     <span><FaLock /></span>
                                     <span>Login</span>
-                                </div>
+                                </Link>
                             }
                         </div>
                         <ul className='flex flex-col justify-start items-start  text-md font-semibold uppercase'>
