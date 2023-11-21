@@ -138,7 +138,7 @@ const Register = () => {
                   <a
                     target="_black"
                     className="text-blue-500"
-                    href="https://https://bashundhara-admin.onrender.com/login"
+                    href="https://bashundhara-admin.onrender.com/login"
                   >
                     Login
                   </a>{" "}
