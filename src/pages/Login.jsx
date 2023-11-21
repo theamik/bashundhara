@@ -56,7 +56,7 @@ const Login = () => {
       )}
       <div className="bg-slate-200 mt-4">
         <div className="w-full justify-center items-center p-10">
-          <div className="grid grid-cols-2 md-lg:grid-cols-1 w-[60%] mx-auto bg-white rounded-md">
+          <div className="grid grid-cols-2 md-lg:grid-cols-1 w-[60%] md-lg:w-full mx-auto bg-white rounded-md">
             <div className="px-8 py-8">
               <h2 className="text-center w-full text-xl text-slate-600 font-bold">
                 Login
