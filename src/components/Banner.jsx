@@ -42,7 +42,7 @@ const Banner = () => {
                 showDots={true}
                 responsive={responsive}
               >
-                {banners.length > 0 &&
+                {banners?.length > 0 &&
                   banners?.map((b, i) => (
                     <Link
                       className="lg-md:h-[440px] h-auto w-full block"
