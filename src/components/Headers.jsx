@@ -98,10 +98,10 @@ const Headers = () => {
                             <div className='flex justify-between md-lg:justify-center items-center flex-wrap pl-8'>
                                 <ul className='flex justify-start items-start gap-8 text-sm font-bold uppercase md-lg:hidden'>
                                     <li>
-                                        <Link className={`p-2 block ${pathname === '/' ? 'text-[#7fad39]' : 'text-slate-600'}`}>Home</Link>
+                                        <Link to='/' className={`p-2 block ${pathname === '/' ? 'text-[#7fad39]' : 'text-slate-600'}`}>Home</Link>
                                     </li>
                                     <li>
-                                        <Link to='/shops' className={`p-2 block ${pathname === '/shop' ? 'text-[#7fad39]' : 'text-slate-600'}`}>Shop</Link>
+                                        <Link to='/shops' className={`p-2 block ${pathname === '/shops' ? 'text-[#7fad39]' : 'text-slate-600'}`}>Shop</Link>
                                     </li>
                                     <li>
                                         <Link className={`p-2 block ${pathname === '/blog' ? 'text-[#7fad39]' : 'text-slate-600'}`}>Blog</Link>
@@ -169,19 +169,19 @@ const Headers = () => {
                         </div>
                         <ul className='flex flex-col justify-start items-start  text-md font-semibold uppercase'>
                             <li>
-                                <Link className={`py-2 block ${pathname === '/' ? 'text-[#7fad39]' : 'text-slate-600'}`}>Home</Link>
+                                <Link to='/' className={`py-2 block ${pathname === '/' ? 'text-[#7fad39]' : 'text-slate-600'}`}>Home</Link>
                             </li>
                             <li>
-                                <Link className={`py-2 block ${pathname === '/shop' ? 'text-[#7fad39]' : 'text-slate-600'}`}>Shop</Link>
+                                <Link to='/shops' className={`py-2 block ${pathname === '/shops' ? 'text-[#7fad39]' : 'text-slate-600'}`}>Shop</Link>
                             </li>
                             <li>
-                                <Link className={`py-2 block ${pathname === '/blog' ? 'text-[#7fad39]' : 'text-slate-600'}`}>Blog</Link>
+                                <Link to='/blog' className={`py-2 block ${pathname === '/blog' ? 'text-[#7fad39]' : 'text-slate-600'}`}>Blog</Link>
                             </li>
                             <li>
-                                <Link className={`py-2 block ${pathname === '/about' ? 'text-[#7fad39]' : 'text-slate-600'}`}>About</Link>
+                                <Link to='/about' className={`py-2 block ${pathname === '/about' ? 'text-[#7fad39]' : 'text-slate-600'}`}>About</Link>
                             </li>
                             <li>
-                                <Link className={`py-2 block ${pathname === '/contact' ? 'text-[#7fad39]' : 'text-slate-600'}`}>Contact</Link>
+                                <Link to='/contact' className={`py-2 block ${pathname === '/contact' ? 'text-[#7fad39]' : 'text-slate-600'}`}>Contact</Link>
                             </li>
                         </ul>
                         <div className='flex justify-start  items-center gap-4'>

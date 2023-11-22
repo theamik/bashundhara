@@ -30,7 +30,8 @@ const ShopProducts = ({ styles, products }) => {
     }
   };
   const add_wishlist = (pro) => {
-    dispatch(add_to_wishlist({
+    dispatch(
+      add_to_wishlist({
         userId: userInfo.id,
         productId: pro._id,
         name: pro.name,
@@ -38,9 +39,10 @@ const ShopProducts = ({ styles, products }) => {
         image: pro.images[0],
         discount: pro.discount,
         rating: pro.rating,
-        slug: pro.slug
-    }))
-}
+        slug: pro.slug,
+      })
+    );
+  };
   useEffect(() => {
     if (successMessage) {
       toast.success(successMessage);
@@ -75,18 +77,23 @@ const ShopProducts = ({ styles, products }) => {
                 : "md-lg:w-full relative group h-[210px] md:h-[270px] overflow-hidden"
             }
           >
-            <img
-              className="h-[240px] rounded-md md:h-[270px] xs:h-[170px] w-full object-cover"
-              src={p.images[0]}
-              alt="image"
-            />
+            <Link to={`/product/details/${p.slug}`}>
+              <img
+                className="h-[240px] rounded-md md:h-[270px] xs:h-[170px] w-full object-cover"
+                src={p.images[0]}
+                alt="image"
+              />
+            </Link>
             <ul className="flex transition-all duration-700 -bottom-10 justify-center items-center gap-2 absolute w-full group-hover:bottom-3">
-              <li onClick={() => add_wishlist(p)} className="w-[38px] h-[38px] cursor-pointer bg-white flex justify-center items-center rounded-full hover:bg-[#7fad39] hover:text-white hover:rotate-[720deg] transition-all">
+              <li
+                onClick={() => add_wishlist(p)}
+                className="w-[38px] h-[38px] cursor-pointer bg-white flex justify-center items-center rounded-full hover:bg-[#7fad39] hover:text-white hover:rotate-[720deg] transition-all"
+              >
                 <AiFillHeart />
               </li>
               <Link
                 className="w-[38px] h-[38px] cursor-pointer bg-white flex justify-center items-center rounded-full hover:bg-[#7fad39] hover:text-white hover:rotate-[720deg] transition-all"
-                to="#"
+                to={`/product/details/${p.slug}`}
               >
                 <FaEye />
               </Link>
