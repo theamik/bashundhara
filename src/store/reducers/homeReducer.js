@@ -22,7 +22,7 @@ export const get_banners = createAsyncThunk(
     'Banner/get_banners',
     async (_, { rejectWithValue, fulfillWithValue }) => {
         try {
-            const { data } = await api.get(`/banners-get`, { withCredentials: true })
+            const { data } = await api.get(`/banners-get`)
             return fulfillWithValue(data)
         } catch (error) {
             return rejectWithValue(error.response.data)
